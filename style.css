@@ -216,6 +216,9 @@ nav a:hover, nav a:focus-visible { color: var(--accent); }
   letter-spacing: .09em;
   text-transform: uppercase;
 }
+.field-photo-reverse { grid-template-columns: minmax(240px, .6fr) minmax(0, 1.7fr); margin-top: 18px; }
+.field-photo-reverse img { grid-column: 2; grid-row: 1; }
+.field-photo-reverse figcaption { grid-column: 1; grid-row: 1; }
 
 .contact { padding: 122px max(24px, calc((100vw - 1180px) / 2)); background: var(--ink); color: white; }
 .contact .section-index { color: #6dd3c6; }
@@ -233,6 +236,9 @@ footer .wordmark { color: white; font-size: 19px; text-transform: none; }
   .research, .experience { grid-template-columns: 1fr; gap: 65px; }
   .field-photo { grid-template-columns: 1fr; }
   .field-photo img { height: min(56vw, 430px); }
+  .field-photo-reverse img, .field-photo-reverse figcaption { grid-column: 1; }
+  .field-photo-reverse img { grid-row: 1; }
+  .field-photo-reverse figcaption { grid-row: 2; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card { min-height: 390px; border-right: 0; border-bottom: 1px solid var(--line); }
   .project-card:last-child { border-bottom: 0; }
